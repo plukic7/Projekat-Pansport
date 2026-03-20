@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Petar Lukic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pansport | Main-Page</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmykxJoKDubITHxs-7VX_Rz8wZBL1opy9bzw&s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="proizvod-body">
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg px-2">
+
+  <div class="container d-flex align-items-center justify-content-between gap-4">
+
+    <a href="main-page.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwcERHL0jV6DPpHKdi1hKnBAlK-xIN-QlRgA&s" alt="Pansport logo" height="60">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2 gap-3">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="main-page.html"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="proizvod.html"><b>SHOP</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#"><b>ABOUT</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#"><b>CONTACT</b></a>
+        </li>    
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+
+    </div>
+
+    <div class="d-flex align-items-center gap-3 ms-auto">
+
+        <a href="checkout.html" class="text-white text-decoration-none d-flex flex-column align-items-center">
+            <span class="d-block d-md-none fs-1">🛒</span>
+            <span class="d-none d-md-block d-xl-none fs-2">🛒</span>
+            <span class="d-none d-xl-block fs-4">🛒</span>
+            <span class="d-none d-lg-block small text-warning text-center">Pogledaj korpu: 3</span>
+        </a>
+
+        <a href="login.html" class="text-white text-decoration-none d-flex flex-column align-items-center">
+            <span class="material-icons d-block d-md-none fs-1">account_circle</span>
+            <span class="material-icons d-none d-md-block d-xl-none fs-2">account_circle</span>
+            <span class="material-icons d-none d-xl-block fs-4">account_circle</span>
+            <span class="d-none d-lg-block small text-center">Login / Registration</span>
+        </a>
+    </div>
+
+  </div>
+
+</nav>
+
+<div class="container mt-5 mb-5">
+  
+  <div class="row mb-5">
+    <div class="col-md-12 text-center">
+      <h1 class="display-4 fw-bold text-dark-blue">Pansport</h1>
+      <p class="lead text-dark">Vaš najbolji izbor za sportske suplemente i dodatke ishrani!</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-3 mb-4">
+      <div class="bg-light p-4 rounded border">
+        <h5 class="mb-4 fw-bold text-dark-blue">Filteri</h5>
+
+        <h6 class="fw-bold mb-3">Kategorije</h6>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="cat1" checked>
+          <label class="form-check-label" for="cat1">Proteini</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="cat2">
+          <label class="form-check-label" for="cat2">Kreatin</label>
+        </div>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="cat3">
+          <label class="form-check-label" for="cat3">Vitamini</label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="cat4">
+          <label class="form-check-label" for="cat4">Oprema</label>
+        </div>
+
+        <h6 class="fw-bold mb-3">Brendovi</h6>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="brand1">
+          <label class="form-check-label" for="brand1">Optimum Nutrition</label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="checkbox" id="brand2">
+          <label class="form-check-label" for="brand2">Biotech USA</label>
+        </div>
+
+        <h6 class="fw-bold mb-3">Cena</h6>
+        <div class="mb-4">
+          <input type="range" class="form-range" min="0" max="100" id="priceRange">
+          <div class="d-flex justify-content-between small text-muted">
+            <span>€0</span>
+            <span>€100+</span>
+          </div>
+        </div>
+
+        <button class="btn text-white w-100 py-2 fw-bold btn-navy">Primeni filtere</button>
+      </div>
+    </div>
+
+    <div class="col-lg-9">
+      
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <h2 class="m-0 fw-bold text-dark-blue">Suplementi:</h2>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-md-0">
+          <label for="sort" class="text-nowrap mb-0 fw-bold">Sortiraj:</label>
+          <select id="sort" class="form-select w-auto">
+            <option selected>Najpopularnije</option>
+            <option value="1">Cena rastuća</option>
+            <option value="2">Cena opadajuća</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <a href="proizvod.html">
+              <img src="slike/CrveniWhey.jpg" class="card-img-top product-image" alt="Proizvod 1">
+            </a>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">100% Whey Protein Proffesional </h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">4500 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="4500">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/PlaviWhey.jpg" class="card-img-top product-image" alt="Proizvod 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">100% Whey Protein</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">4300 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="4300">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/ZeleniWhey.jpg" class="card-img-top product-image" alt="Proizvod 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">100% Whey Protein Isolate</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">3500 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="3500">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/ScitecNutritionCreatine.jpg" class="card-img-top product-image" alt="Proizvod 4">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">100% Creatine Monohydrate</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">2400 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="2400">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/MaxlerCreatine.jpg" class="card-img-top product-image" alt="Proizvod 5">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Creatine Monohydrate</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">3500 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="3500">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/PowerCreatine.jpg" class="card-img-top product-image" alt="Proizvod 6">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Power Creatine</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">2500 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="2500">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/BCAA-XPress.jpg" class="card-img-top product-image" alt="Proizvod 7">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">BCAA XPress</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">3800 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="3800">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/BCAA+GlutamineXPress.jpg" class="card-img-top product-image" alt="Proizvod 8">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">BCAA + Glutamine XPress</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">3000 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="3000">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/PowerBCAA+Glutamine.jpg" class="card-img-top product-image" alt="Proizvod 9">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Power BCAA + Glutamine</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">2800 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="2800">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/HotBlood.jpg" class="card-img-top product-image" alt="Proizvod 10">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Hot Blood</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">4000 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="4000">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/BlackBlood.jpg" class="card-img-top product-image" alt="Proizvod 11">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Black Blood</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">3600 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="3600">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/Supernova.jpg" class="card-img-top product-image" alt="Proizvod 12">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Supernova</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">2800 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="2800">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/Omega-3.jpg" class="card-img-top product-image" alt="Proizvod 13">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Omega-3</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">1500 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="1500">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/Vitamin-C.jpg" class="card-img-top product-image" alt="Proizvod 14">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Vitamin C</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">1000 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="1000">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 mb-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="slike/Magnesium-Forte.jpg" class="card-img-top product-image" alt="Proizvod 15">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fs-6">Magnesium Forte</h5>
+              <p class="mt-auto fw-bold fs-5 mb-2 product-price text-dark-blue">1200 RSD</p>
+              <button class="product-card-btn btn-sm text-white w-100" data-base-price="1200">Dodaj u korpu</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link text-dark" href="#" tabindex="-1" aria-disabled="true">Prethodna</a>
+          </li>
+          <li class="page-item active"><a class="page-link text-white border-0 nav-link-active-dark\" href=\"#\">1</a></li>
+          <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+          <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link text-dark" href="#">Sledeća</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white pt-5">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Suplementi:</span>
+                    <span class="d-none d-lg-block fs-4">Suplementi:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Proteini</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kreatin</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">NO reaktori</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Vitamini</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Minerali</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Info:</span>
+                    <span class="d-none d-lg-block fs-4">Info:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kako se kupuje</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Česta pitanja</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kontakt i lokacija</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">O nama</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Prodaja:</span>
+                    <span class="d-none d-lg-block fs-4">Prodaja:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Novo u prodaji</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Akcija</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Saveti</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-light border-opacity-25 mt-4 p-3">
+
+            <p class="small mb-2 mb-md-0 opacity-75">© Pansport d.o.o.</p>
+
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-facebook-f d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-facebook-f d-none d-lg-block fs-5"></i></a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-instagram d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-instagram d-none d-lg-block fs-5"></i></a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-youtube d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-youtube d-none d-lg-block fs-5"></i></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

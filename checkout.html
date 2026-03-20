@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Petar Lukic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pansport | Checkout</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmykxJoKDubITHxs-7VX_Rz8wZBL1opy9bzw&s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="proizvod-body">
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg px-2">
+
+  <div class="container d-flex align-items-center justify-content-between gap-4">
+
+    <a href="main-page.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwcERHL0jV6DPpHKdi1hKnBAlK-xIN-QlRgA&s" alt="Pansport logo" height="60">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2 gap-3">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="main-page.html"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="proizvod.html"><b>SHOP</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#"><b>ABOUT</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#"><b>CONTACT</b></a>
+        </li>    
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+
+    </div>
+
+    <div class="d-flex align-items-center gap-3 ms-auto">
+
+        <a href="#" class="text-white text-decoration-none d-flex flex-column align-items-center open-cart">
+            <span class="d-block d-md-none fs-1">🛒</span>
+            <span class="d-none d-md-block d-xl-none fs-2">🛒</span>
+            <span class="d-none d-xl-block fs-4">🛒</span>
+            <span class="d-none d-lg-block small text-warning text-center">Pogledaj korpu: 3</span>
+        </a>
+
+        <a href="login.html" class="text-white text-decoration-none d-flex flex-column align-items-center">
+            <span class="material-icons d-block d-md-none fs-1">account_circle</span>
+            <span class="material-icons d-none d-md-block d-xl-none fs-2">account_circle</span>
+            <span class="material-icons d-none d-xl-block fs-4">account_circle</span>
+            <span class="d-none d-lg-block small text-center">Login / Registration</span>
+        </a>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- CHECKOUT -->
+<div class="container py-5">
+<div class="row g-5">
+        
+<div class="col-md-8">
+            
+    <h4 class="mb-3 text-primary-emphasis fst-italic fw-bold">Shipping information:</h4>
+    <div class="card shadow-sm border-0 mb-5 card-light-blue">
+        <div class="card-body p-4">
+        <form>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label fw-bold text-primary-emphasis">First name:</label>
+                    <input type="text" class="form-control" id="firstName" aria-describedby="firstNameFeedback" required>
+                    <div id="firstNameFeedback" aria-live="polite" class="invalid-feedback">
+                        Please enter a valid first name.
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label fw-bold text-primary-emphasis">Last name:</label>
+                    <input type="text" class="form-control" id="lastName" aria-describedby="lastNameFeedback" required>
+                    <div id="lastNameFeedback" aria-live="polite" class="invalid-feedback">
+                        Please enter a valid last name.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="address" class="form-label fw-bold text-primary-emphasis">Address:</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="addressFeedback" required>
+                    <div id="addressFeedback" aria-live="polite" class="invalid-feedback">
+                        Please enter a valid address.
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label for="apartment" class="form-label fw-bold text-primary-emphasis">Apartment, suite, etc:</label>
+                    <input type="text" class="form-control" id="apartment" placeholder="(optional)">
+                </div>
+
+                <div class="col-md-4">
+                <select class="form-select" id="country" required>
+                    <option value="" disabled selected>Country:</option>
+                    <option value="serbia">Serbia</option>
+                    <option value="croatia">Croatia</option>
+                    <option value="bosnia">Bosnia and Herzegovina</option>
+                    <option value="montenegro">Montenegro</option>                        
+                    <option value="north-macedonia">North Macedonia</option>
+                </select>
+                </div>
+
+                <div class="col-md-4">
+                <select class="form-select" id="city" required>
+                    <option value="" disabled selected>City</option>
+                    <option value="Belgrade">Belgrade</option>
+                    <option value="Novi Sad">Novi Sad</option>
+                    <option value="Niš">Niš</option>
+                    <option value="Zagreb">Zagreb</option>
+                    <option value="Sarajevo">Sarajevo</option>
+                    <option value="Podgorica">Podgorica</option>
+                    <option value="Skoplje">Skoplje</option>
+                </select>
+                </div>
+
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="zipcode" placeholder="Zipcode" required>
+                </div>
+            </div>
+
+                <div class="form-check mt-3">
+                    <input type="checkbox" class="form-check-input" id="save-contact">
+                    <label class="form-check-label text-primary-emphasis" for="save-contact">Save contact information!</label>
+                </div>
+        </form>
+        </div>
+    </div>
+
+    <h4 class="mb-3 text-primary-emphasis fst-italic fw-bold">Payment information:</h4>
+    <div class="card shadow-sm border-0 card-light-blue">
+        <div class="card-body p-4">
+                    
+        <div class="d-flex gap-2 mb-4">
+            <button class="btn btn-outline-primary w-50 d-flex justify-content-center align-items-center p-2 bg-light" type="button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="PayPal" class="paypal-logo">
+            </button>
+            <button class="btn btn-outline-dark w-50 fw-bold bg-light" type="button">Cash</button>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-12">
+                <label for="cardName" class="form-label fw-bold text-primary-emphasis">Name on card:</label>
+                <input type="text" class="form-control" id="cardName" aria-describedby="cardNameFeedback" required>
+                <div id="cardNameFeedback" aria-live="polite" class="invalid-feedback">
+                    Please enter a valid name on card.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label for="cardNumber" class="form-label fw-bold text-primary-emphasis">Card number:</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+                <div id="cardNumberFeedback" aria-live="polite" class="invalid-feedback">
+                    Please enter a valid card number.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="expiry" class="form-label fw-bold text-primary-emphasis">Expiry date:</label>
+                <input type="text" class="form-control" id="expiry" placeholder="MM/YY" required>
+                <div id="expiryFeedback" aria-live="polite" class="invalid-feedback">
+                    Please enter a valid expiry date.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <label for="cvc" class="form-label fw-bold text-primary-emphasis">CVC:</label>
+                <input type="text" class="form-control" id="cvc" placeholder="123" required>
+                <div id="cvcFeedback" aria-live="polite" class="invalid-feedback">
+                    Please enter a valid CVC.
+                </div>
+            </div>
+        </div>
+
+                <button class="btn btn-light w-100 mt-4 border fw-bold py-2 shadow-sm" type="submit">Pay</button>
+
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card shadow-sm border-0">
+    <div class="card-body p-4 card-light-purple">
+        <h4 class="d-flex justify-content-between align-items-center mb-4 text-primary-emphasis text-decoration-underline fw-bold">
+            <span>Sadržaj korpe:</span>
+        </h4>
+
+        <ul class="list-group list-group-flush mb-3">            
+            <li class="list-group-item d-flex justify-content-between lh-sm px-0 align-items-center list-group-item-light">
+                <div class="col-3">
+                    <img src="slike/ZeleniWhey.jpg" alt="Whey" class="img-fluid rounded product-thumbnail">
+                </div>
+                <div class="col-6 ps-2">
+                    <h6 class="my-0 text-primary-emphasis">100% Whey Protein Isolate</h6>
+                    <small class="text-body-secondary fw-bold">3500 RSD</small>
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control form-control-sm" value="1" min="1" max="99">
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between lh-sm px-0 align-items-center list-group-item-light">
+                <div class="col-3">
+                    <img src="slike/ScitecNutritionCreatine.jpg" alt="Kreatin" class="img-fluid rounded product-thumbnail">
+                </div>
+                <div class="col-6 ps-2">
+                    <h6 class="my-0 text-primary-emphasis">100% Creatine Monohydrate 300g</h6>
+                    <small class="text-body-secondary fw-bold">2400 RSD</small>
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control form-control-sm" value="1" min="1" max="99">
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between lh-sm px-0 align-items-center list-group-item-light">
+                <div class="col-3">
+                    <img src="slike/BCAA-XPress.jpg" alt="BCAA" class="img-fluid rounded product-thumbnail">
+                </div>
+                <div class="col-6 ps-2">
+                    <h6 class="my-0 text-primary-emphasis">BCAA XPress 300g</h6>
+                    <small class="text-body-secondary fw-bold">3800 RSD</small>
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control form-control-sm" value="1" min="1" max="99">
+                </div>
+            </li>
+        </ul>
+
+            <div class="mb-3">
+                <label for="promo-input" class="form-label fw-bold text-primary-emphasis">Add promo code</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="promo-input" placeholder="Add promo code">
+                    <button class="btn btn-primary" type="button" id="promo-button">Apply</button>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between p-2 border-top bg-light rounded">
+                <span class="fw-bold text-primary-emphasis">Ukupno:</span>
+                <strong class="text-primary-emphasis">9700 RSD</strong>
+            </div>
+    </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white pt-5">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Suplementi:</span>
+                    <span class="d-none d-lg-block fs-4">Suplementi:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Proteini</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kreatin</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">NO reaktori</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Vitamini</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Minerali</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Info:</span>
+                    <span class="d-none d-lg-block fs-4">Info:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kako se kupuje</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Česta pitanja</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kontakt i lokacija</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">O nama</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Prodaja:</span>
+                    <span class="d-none d-lg-block fs-4">Prodaja:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Novo u prodaji</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Akcija</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Saveti</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-light border-opacity-25 mt-4 p-3">
+
+            <p class="small mb-2 mb-md-0 opacity-75">© Pansport d.o.o.</p>
+
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-facebook-f d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-facebook-f d-none d-lg-block fs-5"></i></a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-instagram d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-instagram d-none d-lg-block fs-5"></i></a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-youtube d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-youtube d-none d-lg-block fs-5"></i></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Petar Lukic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pansport | Proizvod</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/proizvod-style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmykxJoKDubITHxs-7VX_Rz8wZBL1opy9bzw&s">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="proizvod-body">
+
+<!-- HEADER -->
+<nav class="navbar navbar-expand-lg px-2">
+
+  <div class="container d-flex align-items-center justify-content-between gap-4">
+
+    <a href="main-page.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwcERHL0jV6DPpHKdi1hKnBAlK-xIN-QlRgA&s" alt="Pansport logo" height="60">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-2 gap-3">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="main-page.html"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="proizvod.html"><b>SHOP</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#"><b>ABOUT</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#"><b>CONTACT</b></a>
+        </li>    
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+
+    </div>
+
+    <div class="d-flex align-items-center gap-3 ms-auto">
+
+        <a href="checkout.html" class="text-white text-decoration-none d-flex flex-column align-items-center">
+            <span class="d-block d-md-none fs-1">🛒</span>
+            <span class="d-none d-md-block d-xl-none fs-2">🛒</span>
+            <span class="d-none d-xl-block fs-4">🛒</span>
+            <span class="d-none d-lg-block small text-warning text-center">Pogledaj korpu: 3</span>
+        </a>
+
+        <a href="login.html" class="text-white text-decoration-none d-flex flex-column align-items-center">
+            <span class="material-icons d-block d-md-none fs-1">account_circle</span>
+            <span class="material-icons d-none d-md-block d-xl-none fs-2">account_circle</span>
+            <span class="material-icons d-none d-xl-block fs-4">account_circle</span>
+            <span class="d-none d-lg-block small text-center">Login / Registration</span>
+        </a>
+    </div>
+
+  </div>
+
+</nav>
+
+<div class="container mt-3" id="main-content">
+    <div class="d-none d-md-flex align-items-center gap-2 mb-3 breadcrumb-line">
+        <span>Pocetna</span><span>></span>
+        <span>Proteini</span><span>></span>
+        <span>Whey protein</span><span>></span>
+        <b>100% Whey Professional</b>
+    </div>
+
+    <div class="row gx-lg-5">
+        
+        <div class="col-12 col-md-5 col-lg-5 mb-4 text-center text-md-start">
+            <div class="mb-3">
+                <div class="bg-transparent border rounded overflow-hidden mx-auto mx-md-0 gallery-main-image">
+                    <img src="slike/WheyCokolada.webp" alt="hero-image" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 overflow-auto pb-2">
+                <span class="material-icons border rounded-circle d-none d-md-flex align-items-center justify-content-center bg-white gallery-nav-buttons">chevron_left</span>
+                
+                <div class="border rounded gallery-thumbnail-item selected">
+                    <img src="slike/WheyCokolada.webp" class="w-100 h-100 rounded" alt="hero-image">
+                </div>
+                <div class="border rounded gallery-thumbnail-item unselected">
+                    <img src="slike/WheyBelacokJagoda.jpg" class="w-100 h-100 rounded" alt="isolate">
+                </div>
+                <div class="border rounded gallery-thumbnail-item unselected">
+                    <img src="slike/WheyVanila.webp" class="w-100 h-100 rounded" alt="kreatin">
+                </div>
+                <div class="border rounded gallery-thumbnail-item unselected">
+                    <img src="slike/WheyKokos.jpg" class="w-100 h-100 rounded" alt="bcaa">
+                </div>
+
+                <span class="material-icons border rounded-circle d-none d-md-flex align-items-center justify-content-center bg-white gallery-nav-buttons">chevron_right</span>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-5 mt-4 mt-md-0">
+            <div class="p-3 border rounded product-details-box">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                    <span class="px-2 py-1 rounded text-white fw-bold badge-sale-product">AKCIJA!</span>
+                    <span class="px-2 py-1 rounded text-white fw-bold badge-discount-product">-10% na online kupovinu!</span>
+                    <span class="material-icons ms-auto text-dark badge-stars">★★★★★</span>
+                    <span class="material-icons text-secondary ms-1">favorite_border</span>
+                </div>
+                
+                <h1 class="fw-bold fs-4 mb-2 text-dark">100% Whey Proffesional</h1>
+                <p class="mb-3 text-muted-custom">Visokokvalitetni miks koncentrata i izolata proteina surutke, fantastičnog ukusa.<br>Hrani mišiće, sprečava razgradnju i ubrzava oporavak.</p>
+                
+                <div class="d-flex align-items-center py-2 my-2 border-bottom border-dark">
+                    <div class="d-flex align-items-center fw-bold status-check">
+                        <span class="material-icons me-1">check_circle</span>Na stanju
+                    </div>
+                    <div class="d-flex flex-column ms-4 text-start">
+                        <span class="text-decoration-line-through price-old">7500 RSD</span>
+                        <span class="fw-bold text-dark">6000 RSD</span>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row gap-3 my-3">
+                    <div>
+                        <label for="pakovanje" class="d-block mb-1 label-custom">Pakovanje:</label>
+                        <select id="pakovanje" name="pakovanje" class="form-select border rounded select-style">
+                            <option>30 g</option><option>500 g</option><option>920 g</option><option>2.35 kg</option><option>5 kg</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="ukus" class="d-block mb-1 label-custom">Ukus:</label>
+                        <select id="ukus" name="ukus" class="form-select border rounded select-style">
+                            <option>Čokolada</option><option>Vanila</option><option>Bela čokolada – jagoda</option><option>Banana</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-end gap-3 my-3">
+                    <div class="d-flex flex-column">
+                        <label for="kolicina" class="mb-1 text-dark label-custom">Potrebna količina:</label>
+                        <input type="number" id="kolicina" class="text-center border rounded quantity-input" min="1" max="99" value="1">
+                    </div>
+                    <button class="w-100 btn-add-to-cart" data-base-price="6000">Dodaj u korpu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 w-100 product-details-container">
+        <div class="accordion" id="productAccordion">
+            <div class="accordion-item bg-transparent border border-dark rounded mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold fs-5 bg-transparent text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        Opis proizvoda
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
+                    <div class="accordion-body accordion-body-custom">
+                        <ul class="mb-3">
+                            <li>Hrani mišiće i sprečava razgradnju</li>
+                            <li>Ubrzava oporavak</li>
+                            <li>Pojačan aminokiselinski matriks: L-leucin, L-glutamin, taurin, L-arginin</li>
+                            <li>Fantastični ukusi</li>
+                            <li>Brza apsorpcija</li>
+                            <li>Sa dodatkom digestivnih enzima</li>
+                            <li>Bez aspartama</li>
+                        </ul>
+                        <p>Protein iz surutke se smatra “kraljem” svih proteina za bodibilding...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border border-dark rounded mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold fs-5 bg-transparent text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        Nutritivna vrednost
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered border-dark m-0">
+                                <thead>
+                                    <tr>
+                                        <th>Nutritivna vrednost:</th>
+                                        <th>Po porciji (30g):</th>
+                                        <th>Na 100g proizvoda:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Energija:</td><td>115 kcal</td><td>383 kcal</td></tr>
+                                    <tr><td>Masti:</td><td>1,7 g</td><td>5,8 g</td></tr>
+                                    <tr><td>Ugljeni hidrati:</td><td>2,4 g</td><td>7,9 g</td></tr>
+                                    <tr><td>Proteini:</td><td>22 g</td><td>75 g</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-transparent border border-dark rounded mb-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold fs-5 bg-transparent text-dark shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        Recenzije korisnika
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                    <div class="accordion-body accordion-body-custom">
+                        <p><b>Petar:</b> Najbolji odnos kvalitet - cena na tržištu ★★★★★</p>
+                        <p><b>Nina:</b> Kvalitetan proizvod, nisam naduta od njega. Dobri ukusi. ★★★★★</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 w-100 product-details-container similar-products-margin\">
+        <h3 class="fs-5 mb-3 text-dark-blue">Slični proizvodi:</h3>
+        <div class="d-flex align-items-center gap-3 overflow-auto pb-3">
+            <span class="material-icons border rounded-circle d-none d-md-flex align-items-center justify-content-center bg-white chevron-button">chevron_left</span>
+
+            <div class="border rounded p-2 text-center similar-product-item">
+                <img src="slike/ZeleniWhey.jpg" alt="Whey Isolate" class="mb-2 similar-product-image">
+                <div class="fw-bold mb-1 small-text">Whey Protein Isolate 920g</div>
+                <div class="fw-bold text-dark price-small-text">3500 RSD</div>
+            </div>
+            <div class="border rounded p-2 text-center similar-product-item">
+                <img src="slike/ScitecNutritionCreatine.jpg" alt="Kreatin" class="mb-2 similar-product-image">
+                <div class="fw-bold mb-1 small-text">100% Creatine Monohydrate 300g</div>
+                <div class="fw-bold text-dark price-small-text">3800 RSD</div>
+            </div>
+            <div class="border rounded p-2 text-center similar-product-item">
+                <img src="slike/BCAA-XPress.jpg" alt="BCAA" class="mb-2 similar-product-image">
+                <div class="fw-bold mb-1 small-text">BCAA XPress 300g</div>
+                <div class="fw-bold text-dark price-small-text">2400 RSD</div>
+            </div>
+            <div class="border rounded p-2 text-center similar-product-item">
+                <img src="slike/PlaviWhey.jpg" alt="plaviwhey" class="mb-2 similar-product-image">
+                <div class="fw-bold mb-1 small-text">100% Whey Protein 2.3kg</div>
+                <div class="fw-bold text-dark price-small-text">4300 RSD</div>
+            </div>
+
+            <span class="material-icons border rounded-circle d-none d-md-flex align-items-center justify-content-center bg-white chevron-button">chevron_right</span>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-white pt-5">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Suplementi:</span>
+                    <span class="d-none d-lg-block fs-4">Suplementi:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Proteini</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kreatin</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">NO reaktori</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Vitamini</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Minerali</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Info:</span>
+                    <span class="d-none d-lg-block fs-4">Info:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kako se kupuje</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Česta pitanja</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Kontakt i lokacija</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">O nama</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="d-block d-lg-none fs-2">Prodaja:</span>
+                    <span class="d-none d-lg-block fs-4">Prodaja:</span>
+                </h4>
+                <ul class="list-unstyled lh-lg">
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Novo u prodaji</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Akcija</a></li>
+                    <li><a href="#" class="text-info text-decoration-none fs-5 text-white">Saveti</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center border-top border-light border-opacity-25 mt-4 p-3">
+
+            <p class="small mb-2 mb-md-0 opacity-75">© Pansport d.o.o.</p>
+
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-facebook-f d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-facebook-f d-none d-lg-block fs-5"></i></a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-instagram d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-instagram d-none d-lg-block fs-5"></i></a></li>
+            <li><a href="#" class="text-white text-decoration-none">
+                <i class="fa-brands fa-youtube d-block d-lg-none fs-2"></i>
+                <i class="fa-brands fa-youtube d-none d-lg-block fs-5"></i></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
